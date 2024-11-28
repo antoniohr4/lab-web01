@@ -13,11 +13,12 @@ $TTL	86400
 			2419200		; Expire
 			  86400 )	; Negative Cache TTL
 ;
-@	  IN	NS	ns1
-ns1	  IN	A	192.168.57.10
-mercurio  IN    A       192.168.57.11
+@	  		IN		NS		ns1
+ns1	  		IN		A		192.168.57.10
+mercurio  	IN   	A       192.168.57.11
+
 
 ; Poner alias de apolo
-apolo.olimpo.test. IN CNAME mercurio.olimpo.test.
-
-
+apolo	IN	CNAME	mercurio
+; Poner alias de atenea
+atenea	IN	CNAME	mercurio
